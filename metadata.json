@@ -1,0 +1,6 @@
+{
+  "name": "ScholarTrack",
+  "description": "Educational portal for student gradebook, attendance tracking, and class performance analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

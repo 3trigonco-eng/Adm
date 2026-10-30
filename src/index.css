@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  
+  .material-symbols-outlined.fill {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
+
+.grade-input:focus {
+  outline: 2px solid #f43f5e;
+  outline-offset: -2px;
+}
+
+.table-container {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #0f172a;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 10px;
+}
+
+.chart-bg {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100% 25%;
+}
+
+@media print {
+  aside, header, button, .no-print {
+    display: none !important;
+  }
+
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .bg-slate-900, .bg-slate-950, .bg-slate-800 {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  .text-white, .text-slate-200, .text-slate-300, .text-slate-400 {
+    color: #000000 !important;
+  }
+}
+
